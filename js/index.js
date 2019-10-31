@@ -41,58 +41,49 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let ancr_tags = document.querySelectorAll('nav a');
-ancr_tags[0].textContent = 'Services';
-ancr_tags[1].textContent = 'Products';
-ancr_tags[2].textContent = 'Vision';
-ancr_tags[3].textContent = 'Features';
-ancr_tags[4].textContent = 'About';
-ancr_tags[5].textContent = 'Contact';
+let nav_items = document.querySelectorAll("a");
+nav_items[0].textContent = siteContent["nav"]["nav-item-1"];
+nav_items[1].textContent = siteContent["nav"]["nav-item-2"];
+nav_items[2].textContent = siteContent["nav"]["nav-item-3"];
+nav_items[3].textContent = siteContent["nav"]["nav-item-4"];
+nav_items[4].textContent = siteContent["nav"]["nav-item-5"];
+nav_items[5].textContent = siteContent["nav"]["nav-item-6"];
 
-//Header
+//Section Healine
+let sect_headline = document.querySelector("h1");
+sect_headline.textContent = siteContent["cta"]["h1"];
 
-let head_img = document.querySelector('#cta-img');
-head_img.setAttribute('src', 'img/header-img.png');
+let sect_button = document.querySelector("button");
+sect_button.textContent = siteContent["cta"]["button"];
 
-let head_text = document.querySelector('h1');
-head_text.textContent = 'DOM \n IS \n AWESOME';
+let sect_img = document.getElementById("cta-img");
+sect_img.setAttribute('src', siteContent["cta"]["img-src"]);
 
-let button_txt = document.querySelector('button');
-button_txt.textContent = "Get Started";
+// Main Section
+let sect_headers = document.querySelectorAll("h4");
+sect_headers[0].textContent = siteContent["main-content"]["features-h4"];
+sect_headers[1].textContent = siteContent["main-content"]["about-h4"];
+sect_headers[2].textContent = siteContent["main-content"]["services-h4"];
+sect_headers[3].textContent = siteContent["main-content"]["product-h4"];
+sect_headers[4].textContent = siteContent["main-content"]["vision-h4"];
 
-//Section
+let sect_content = document.querySelectorAll("p");
+sect_content[0].textContent = siteContent["main-content"]["features-content"];
+sect_content[1].textContent = siteContent["main-content"]["about-content"];
+sect_content[2].textContent = siteContent["main-content"]["services-content"];
+sect_content[3].textContent = siteContent["main-content"]["product-content"];
+sect_content[4].textContent = siteContent["main-content"]["vision-content"];
 
-let top_lft_h = document.querySelectorAll('.main-content .text-content h4');
-top_lft_h[0].textContent = "Features";
-top_lft_h[1].textContent = "About";
-top_lft_h[2].textContent = "Services"
-top_lft_h[3].textContent = "Product";
-top_lft_h[4].textContent = "Vision";
+let main_sect_img = document.getElementById("middle-img");
+main_sect_img.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-let top_lft_txt = document.querySelectorAll('.main-content .text-content p');
-top_lft_txt[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-top_lft_txt[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-top_lft_txt[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-top_lft_txt[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-top_lft_txt[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+//Contact 
 
-let mid_img = document.querySelector('.middle-img')
-mid_img.setAttribute('src', 'img/mid-page-accent.jpg');
-
-
-//Contact
-
-let contact_header = document.querySelector('.contact h4');
-contact_header.textContent = 'Contact';
-
-let contact_p = document.querySelectorAll('.contact p');
-contact_p[0].textContent = "123 Way 456 Street \n Somewhere, USA";
-
-contact_p[1].textContent = "1 (888) 888-8888";
-
-contact_p[2].textContent = "sales@greatidea.io";
+sect_headers[5].textContent = siteContent["contact"]["contact-h4"];
+sect_content[5].textContent = siteContent["contact"]["address"];
+sect_content[6].textContent = siteContent["contact"]["phone"];
+sect_content[7].textContent = siteContent["contact"]["email"];
 
 //Footer
-
-let footer_p = document.querySelector('footer p');
-footer_p.textContent = "Copyright Great Idea! 2018";
+let footer = document.querySelector("footer");
+footer.textContent = siteContent["footer"]["copyright"];
