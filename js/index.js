@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM <br> Is <br> Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address" : "123 Way 456 Street <br> Somewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -51,7 +51,7 @@ nav_items[5].textContent = siteContent["nav"]["nav-item-6"];
 
 //Section Healine
 let sect_headline = document.querySelector("h1");
-sect_headline.textContent = siteContent["cta"]["h1"];
+sect_headline.innerHTML = siteContent["cta"]["h1"];
 
 let sect_button = document.querySelector("button");
 sect_button.textContent = siteContent["cta"]["button"];
@@ -80,7 +80,7 @@ main_sect_img.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 //Contact 
 
 sect_headers[5].textContent = siteContent["contact"]["contact-h4"];
-sect_content[5].textContent = siteContent["contact"]["address"];
+sect_content[5].innerHTML = siteContent["contact"]["address"];
 sect_content[6].textContent = siteContent["contact"]["phone"];
 sect_content[7].textContent = siteContent["contact"]["email"];
 
